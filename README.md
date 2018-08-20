@@ -18,7 +18,7 @@ Save the result in another video. 
      fire_mario = cv2.imread('fire_mario.png') 
                                          
  
- 
+ ![big_mario](https://user-images.githubusercontent.com/35124840/44327056-deb33380-a45d-11e8-9f11-42d47ffb5803.png) 
  
  
  
