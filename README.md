@@ -59,11 +59,13 @@ What does this program do? 
  ![screenshot from 2018-08-07 19-17-42](https://user-images.githubusercontent.com/35124840/44330230-c1cf2e00-a466-11e8-9c6e-d9f5f5d9e10b.png) + ![big_mario](https://user-images.githubusercontent.com/35124840/44327056-deb33380-a45d-11e8-9f11-42d47ffb5803.png)   =    
  ![screenshot from 2018-08-07 19-15-29](https://user-images.githubusercontent.com/35124840/44330232-c4318800-a466-11e8-9209-2876e90b06ff.png)
   
-   - Use the OpenCV function matchTemplate to search for matches between an image patch and an input image  
+  
+  
+* Use the OpenCV function matchTemplate to search for matches between an image patch and an input image.  
        
-   **method=CV_TM_CCOEFF_NORMED**
+  **method=CV_TM_CCOEFF_NORMED**
              
-   ![235e42ec68d2d773899efcf0a4a9d35a7afedb64](https://user-images.githubusercontent.com/35124840/44330477-66517000-a467-11e8-8d1f-461c745d5f8a.png)
+![235e42ec68d2d773899efcf0a4a9d35a7afedb64](https://user-images.githubusercontent.com/35124840/44330477-66517000-a467-11e8-8d1f-461c745d5f8a.png)
  
  
  
@@ -154,8 +156,9 @@ What does this program do? 
 
 ### Time:   
 
-- Using Function timeit.default_timer() 
-  Returns the current time instant, a floating-point number of seconds since the epoch. 
+- Using Function **timeit.default_timer()**. 
+
+ Returns the current time instant, a floating-point number of seconds since the epoch. 
 
 |  **Type** | **Average time every frame ( seconds)**   |
 | --- | --- |
