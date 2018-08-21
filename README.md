@@ -1,4 +1,3 @@
-﻿                             
 # Tracking Mario in Video
                                                
  
