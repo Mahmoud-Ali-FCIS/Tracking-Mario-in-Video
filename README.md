@@ -1,61 +1,63 @@
 ﻿                             
-                                           -------------------------
-                                            Tracking Mario in Video
-                                           =========================
+                                               
+# Tracking Mario in Video
+                                               
  
-Goal: Find and track object (Mario) in video using open CV (Template Matching). 
+### Goal: Find and track object (Mario) in video using open CV (Template Matching). 
 
 What does this program do? 
 
-   1- Loads an input video and a images patch (templates). 
+   1. Loads an input video and a images patch (templates). 
 
-   2- Perform a template matching procedure by using the Open CV function matchTemplate . 
+   2. Perform a template matching procedure by using the Open CV function matchTemplate . 
 
-   3- Localize the location with higher matching probability.
+   3. Localize the location with higher matching probability.
 
-   4- Draw a rectangle around the area corresponding to the highest match.
+   4. Draw a rectangle around the area corresponding to the highest match.
 
-   5- Save the result in another video. 
+   5. Save the result in another video. 
 
-1- Loads an input video and a images patch (templates). 
+**start processes**
+
+1. Loads an input video and a images patch (templates). 
         
    Video : https://www.youtube.com/watch?v=Bx6J-Xtps94 
           
-   Read video and templets  
+   - Read video and templets  
+   ```
+   Cap = cv2.VideoCapture('mario.mkv')    
      
-       Cap = cv2.VideoCapture('mario.mkv')    
+   mini_mario = cv2.imread('mini_mario.png')
      
-       mini_mario = cv2.imread('mini_mario.png')
+   big_mario  = cv2.imread('big_mario.png') 
      
-       big_mario  = cv2.imread('big_mario.png') 
-     
-       fire_mario = cv2.imread('fire_mario.png') 
-     
-                                         
+   fire_mario = cv2.imread('fire_mario.png') 
+   ```
+
  ![mini_mario](https://user-images.githubusercontent.com/35124840/44330020-41a8c880-a466-11e8-818b-ee0368da13e1.png)
  ![big_mario](https://user-images.githubusercontent.com/35124840/44327056-deb33380-a45d-11e8-9f11-42d47ffb5803.png) 
  ![fire_mario](https://user-images.githubusercontent.com/35124840/44330023-44a3b900-a466-11e8-8832-a3d266415bb7.png)
  
  
  
-Read Frame from video and using as input image 
-
+   - Read Frame from video and using as input image 
+   ```
    while True: 
    
          success, frame = cap.read() 
-            
+   ```        
     
-2- Perform a template matching procedure by using the  
+2. Perform a template matching procedure by using the  
+ 
+- Open CV function (matchTemplate ). 
 
-Open CV function (matchTemplate ). 
+  - We need two primary components: 
 
-We need two primary components: 
-
-   Source image (I): The image in which we expect to find a match to the template image 
+     **Source image (I):** The image in which we expect to find a match to the template image 
       
-   Template image (T): The patch image which will be compared to the template image 
+     **Template image (T):** The patch image which will be compared to the template image 
       
-our goal is to detect the highest matching area: 
+- our goal is to detect the highest matching area: 
  
  
  ![screenshot from 2018-08-07 19-17-42](https://user-images.githubusercontent.com/35124840/44330230-c1cf2e00-a466-11e8-9c6e-d9f5f5d9e10b.png) + ![big_mario](https://user-images.githubusercontent.com/35124840/44327056-deb33380-a45d-11e8-9f11-42d47ffb5803.png)   =    
