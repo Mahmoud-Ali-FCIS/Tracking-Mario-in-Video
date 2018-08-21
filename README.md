@@ -16,7 +16,7 @@ What does this program do? 
 
    5. Save the result in another video. 
 
-### start processes ###
+### Start processes ###
 
 **1. Loads an input video and a images patch (templates).**
         
@@ -138,7 +138,7 @@ What does this program do? 
 **2. when the background is brown in case big Mario the operation fail.**
  ![screenshot from 2018-08-07 20-07-57](https://user-images.githubusercontent.com/35124840/44329368-92b7bd00-a464-11e8-81ed-29effad7e60f.png)
 **3. when the Mario is (fire Mario) the operation sometimes fail and appear the rectangle on the white object.** 
- ![screenshot from 2018-08-07 20-08-18](https://user-images.githubusercontent.com/35124840/44329391-9c412500-a464-11e8-8e86-9798d413a4b8.png)
+ ![screenshot from 2018-08-07 20-11-02](https://user-images.githubusercontent.com/35124840/44386014-7fb6f280-a521-11e8-996b-5bfda6ef5e57.png)
  
 **4. the time taken to produce the output video (very large) about  2 hours 11 minutes.** 
  
