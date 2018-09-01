@@ -187,8 +187,9 @@ What does this program do? 
 | Memory Ram | 16 GB |
 
   
- 
- 
+**Solve some of problem in second document.**
+ 
+ https://github.com/Mahmoud-Ali-FCIS/Tracking-Mario-in-Video/blob/master/README2.md
  
  
 
